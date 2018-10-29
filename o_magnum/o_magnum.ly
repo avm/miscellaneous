@@ -5,7 +5,7 @@ scDate = "2017-Jan-27"
 \include "../include/sc_layout_vocal.ly"
 
 scStaffSize = 16
-scStaffSizeTranspose = 16
+scStaffSizeTranspose = 15.8
 #(ly:set-option 'midi-extension "mid")
 
 \include "english.ly"
@@ -26,7 +26,7 @@ scTransposeTo = e
 
 scGlobal= {
   \key g \dorian
-  \time 4/2
+  \time 4/4
   \autoBeamOff
 }
 
@@ -41,26 +41,26 @@ scMusicOneClef = \clef "treble"
 scMusicOneClefTransposed = \clef "treble"
 
 scMusicOne =   \relative c'' {  
-a\breve d,1 a'1 ~ a2 a bf bf a1 r2 d2 
-bf2 c d2. d4 d2 a bf a2  ~ a4 \melisma g f e f g a f g f f e8[ d] e1 ~ e \melismaEnd d1
-fs\breve g1 fs2. g4 a2 bf2.  \melisma a4 g2 ~ g2 fs2 \melismaEnd g2 \melisma f4 e
-d2 \melismaEnd e2 f1 r2 d'2 bf c d2. d4 d2 bf2 g2 a bf2. bf4 
-bf2 a2. g4 g2 ~ g2 fs2 g1 r\breve r2 bf2 a2. fs4
-g2 a2 bf2 g bf2. bf4 bf2 bf2 a1 a fs2 a2 a2. a4 a2 b c1 bf2. a8[ g ]a1 bf1 a r\breve r2 d,2 g1
-f2 d e fs g2. a4 b2 b a1 r1 | r\breve
-r2 g2 c1 bf2 g a b c2. \melisma bf4 a g g2 ~ g2 fs4 e fs2 \melismaEnd fs 
-g1 r1 fs1. fs2 | fs1 g fs2. \melisma g4 a2 bf2 ~ bf4 a a2. g4 g2 \melismaEnd 
-a2 fs1 fs2 g2. g4 g1 r2 g2.\melisma a4 bf g a2 \melismaEnd d c1
-bf2 d2 c2 a2 bf2. \melisma a4 g f f e8 d e2 \melismaEnd e d a'2 ~ a2 f1 bf2 ~ 
-bf4 a4 g1 fs2
-\time 3/1
-g\breve bf1 a\breve fs1 g1. f2 g a bf1 a\breve
-bf\breve g1 f\breve d1 e1. d2 e f g\breve fs1 g\breve.
-r1 r1 c1 bf1. a2 bf2 g | a1 f2 g a b c\breve c1
-bf1 d\breve 
-\time 4/2
-d\breve r2 d2 d4 c bf a g2 c2. bf4 a g 
-fs2 g1 fs2 | g\breve ~ g\breve ~ g ~ g \bar "|."
+a1 d,2 a'2 ~ a4 a bf bf a2 r4 d4 
+bf4 c d4. d8 d4 a bf a4  ~ a8 \melisma g f e f g a f g f f e16[ d] e2 ~ e \melismaEnd d2
+fs1 g2 fs4. g8 a4 bf4.  \melisma a8 g4 ~ g4 fs4 \melismaEnd g4 \melisma f8 e
+d4 \melismaEnd e4 f2 r4 d'4 bf c d4. d8 d4 bf4 g4 a bf4. bf8 
+bf4 a4. g8 g4 ~ g4 fs4 g2 r1 r4 bf4 a4. fs8
+g4 a4 bf4 g bf4. bf8 bf4 bf4 a2 a fs4 a4 a4. a8 a4 b c2 bf4. a16[ g ]a2 bf2 a r1 r4 d,4 g2
+f4 d e fs g4. a8 b4 b a2 r2 | r1
+r4 g4 c2 bf4 g a b c4. \melisma bf8 a g g4 ~ g4 fs8 e fs4 \melismaEnd fs 
+g2 r2 fs2. fs4 | fs2 g fs4. \melisma g8 a4 bf4 ~ bf8 a a4. g8 g4 \melismaEnd 
+a4 fs2 fs4 g4. g8 g2 r4 g4.\melisma a8 bf g a4 \melismaEnd d c2
+bf4 d4 c4 a4 bf4. \melisma a8 g f f e16 d e4 \melismaEnd e d a'4 ~ a4 f2 bf4 ~ 
+bf8 a8 g2 fs4
+\time 3/2
+g1 bf2 a1 fs2 g2. f4 g a bf2 a1
+bf1 g2 f1 d2 e2. d4 e f g1 fs2 g1.
+r2 r2 c2 bf2. a4 bf4 g | a2 f4 g a b c1 c2
+bf2 d1 
+\time 4/4
+d1 r4 d4 d8 c bf a g4 c4. bf8 a g 
+fs4 g2 fs4 | g1 ~ g1 ~ g ~ g \bar "|."
 }
 
 scMusicTwoName = "altus"
@@ -68,26 +68,26 @@ scMusicTwoClef = \clef "G_8"
 scMusicTwoClefTransposed = \clef "treble"
 
 scMusicTwo =   \relative c' {  
-r\breve r1 d1 ~ d1 g,1 d'1. d2 ef2 ef d1 r2 d2 bf2 c d2. d4 d2 a2 bf2 d1 cs4 \ficta b 
-cs1 d1 d\breve d1 d2. e4 f2 f,2 g2. a4 bf2 a2 g d'2 |
-d2 c a2. a4 a2 bf2. a4 g2 ~ g2 fs2 g2 g'2 d2 f2 f2. f4
-f1 d2 ef2 d1 d1 ~ d1 r1 r2 g2 f2. d4
-d2 fs2 g2 d d2. d4 d2 e2 f1 e1 d2 fs2 fs2. fs4 
-fs2 fs g a2 ~ a4 g g1 fs2 g2 d2 f2. \melisma e8 [ f ] g2 f4 e d2 \melismaEnd a2 | r1 r2 g2 
-d'1 c2 a2 b2 c2 d4 \melisma c d e f2. e8[ f] g2 \melismaEnd f4 e4 d1 r2 a2 
-d1 c2 a2 bf4 \melisma c d e f1 \melismaEnd g2. \melisma f4 ef d ef2 d1. \melismaEnd d2
-b1 r1 d1. d2 d1 d1 d\breve ~ d
-d1 r2 d2 ~ d2 d2 ef2. ef4 d2 g,4 \melisma a bf c d e f2 \melismaEnd f2 f1
-d2 d e fs2 g2. \melisma f4 e d d2 ~ d2 \melismaEnd cs2 d2 f2 ~ f4 \melisma e4 d c d1 \melismaEnd
-bf2 c2 d1 
-\time 3/1 
-d\breve g1 f\breve d1 e1. d2 e f g\breve fs1 
-g\breve d1 d\breve a1 c\breve c1 d1 d\breve d\breve b1
-g\breve \ficta fs1 g\breve g'1 f\breve d1 e1. d2 e f 
-g\breve fs1 
-\time 4/2
-g1 r2 d2 d4 \melisma c b a g2 \melismaEnd g'2 ~ g4 \melisma f4 ef d4 c2 ef2 \melismaEnd
-d1 r2 a2 bf2. c4 d2 ef2 ~ ef \melisma d2 c2. d4 ef1 \melismaEnd d1 ~ d\breve
+r1 r2 d2 ~ d2 g,2 d'2. d4 ef4 ef d2 r4 d4 bf4 c d4. d8 d4 a4 bf4 d2 cs8 \ficta b 
+cs2 d2 d1 d2 d4. e8 f4 f,4 g4. a8 bf4 a4 g d'4 |
+d4 c a4. a8 a4 bf4. a8 g4 ~ g4 fs4 g4 g'4 d4 f4 f4. f8
+f2 d4 ef4 d2 d2 ~ d2 r2 r4 g4 f4. d8
+d4 fs4 g4 d d4. d8 d4 e4 f2 e2 d4 fs4 fs4. fs8 
+fs4 fs g a4 ~ a8 g g2 fs4 g4 d4 f4. \melisma e16 [ f ] g4 f8 e d4 \melismaEnd a4 | r2 r4 g4 
+d'2 c4 a4 b4 c4 d8 \melisma c d e f4. e16[ f] g4 \melismaEnd f8 e8 d2 r4 a4 
+d2 c4 a4 bf8 \melisma c d e f2 \melismaEnd g4. \melisma f8 ef d ef4 d2. \melismaEnd d4
+b2 r2 d2. d4 d2 d2 d1 ~ d
+d2 r4 d4 ~ d4 d4 ef4. ef8 d4 g,8 \melisma a bf c d e f4 \melismaEnd f4 f2
+d4 d e fs4 g4. \melisma f8 e d d4 ~ d4 \melismaEnd cs4 d4 f4 ~ f8 \melisma e8 d c d2 \melismaEnd
+bf4 c4 d2 
+\time 3/2 
+d1 g2 f1 d2 e2. d4 e f g1 fs2 
+g1 d2 d1 a2 c1 c2 d2 d1 d1 b2
+g1 \ficta fs2 g1 g'2 f1 d2 e2. d4 e f 
+g1 fs2 
+\time 4/4
+g2 r4 d4 d8 \melisma c b a g4 \melismaEnd g'4 ~ g8 \melisma f8 ef d8 c4 ef4 \melismaEnd
+d2 r4 a4 bf4. c8 d4 ef4 ~ ef \melisma d4 c4. d8 ef2 \melismaEnd d2 ~ d1
 }
 
 scMusicThreeName = "tenor"
@@ -95,24 +95,24 @@ scMusicThreeClef = \clef "G_8"
 scMusicThreeClefTransposed = \clef "G_8"
 
 scMusicThree =   \relative c' {  
-r\breve r r r r r r r1 
-a1 ~ a1 d,1 a'1. a2 bf2 bf a1 r2 d2 bf c d2. d4 d2 a2
-bf2 a2. \melisma g4 f e f1 g1 a1 \melismaEnd bf2 d bf c d2. d4 d2 c bf c a1 g2 bf a2. fs4 g2 a bf2 g d'2. d4 
+r1 r r r r r r r2 
+a2 ~ a2 d,2 a'2. a4 bf4 bf a2 r4 d4 bf c d4. d8 d4 a4
+bf4 a4. \melisma g8 f e f2 g2 a2 \melismaEnd bf4 d bf c d4. d8 d4 c bf c a2 g4 bf a4. fs8 g4 a bf4 g d'4. d8 
 
-c2 a g bf2 bf2. bf4 bf2 bf c2 d1 cs2 d2 d,2 d'2. d4 d2 d c1
-ef1 d r2 g, d'1 c2 a b c d4 \melisma c bf a g a bf g a1. \melismaEnd a2 g1 r2 g2 
-d'1 c2 a bf2 a2. g4 f e f2 g1 fs2 g bf2 c d ef2. \melisma d4 c bf c2 bf2 a4 g4 a2 \melismaEnd a2
-g1 r1 a1. a2 a1 bf1 a1. g2 a1 bf a2 a1 a2 b2. b4 c2 g4 \melisma a bf c d1 \melismaEnd bf2 c2 bf1 a2
+c4 a g bf4 bf4. bf8 bf4 bf c4 d2 cs4 d4 d,4 d'4. d8 d4 d c2
+ef2 d r4 g, d'2 c4 a b c d8 \melisma c bf a g a bf g a2. \melismaEnd a4 g2 r4 g4 
+d'2 c4 a bf4 a4. g8 f e f4 g2 fs4 g bf4 c d ef4. \melisma d8 c bf c4 bf4 a8 g8 a4 \melismaEnd a4
+g2 r2 a2. a4 a2 bf2 a2. g4 a2 bf a4 a2 a4 b4. b8 c4 g8 \melisma a bf c d2 \melismaEnd bf4 c4 bf2 a4
 
-bf2 bf c d2 g,1. bf2 a\breve f g1 a  
-\time 3/1
-g\breve g1 d'\breve d1 c\breve c1 g1 d'\breve
-g,\breve bf1 a\breve f1 g1. f2 g a bf1 a\breve g\breve d1 
+bf4 bf c d4 g,2. bf4 a1 f g2 a  
+\time 3/2
+g1 g2 d'1 d2 c1 c2 g2 d'1
+g,1 bf2 a1 f2 g2. f4 g a bf2 a1 g1 d2 
 
-e1 c\breve d bf'1 a\breve f1 g\breve g1 g1 a\breve 
-\time 4/2
-g2 bf2 a4 \melisma g f e d2 \melismaEnd g4 \melisma a bf c d bf c2. d4 ef4 d c bf4 a2 g \melismaEnd 
-a2 d2 d4 \melisma c bf a g2 \melismaEnd bf2 \melisma c d ef2. d4 c1. b4 a \melismaEnd b\breve
+e2 c1 d bf'2 a1 f2 g1 g2 g2 a1 
+\time 4/4
+g4 bf4 a8 \melisma g f e d4 \melismaEnd g8 \melisma a bf c d bf c4. d8 ef8 d c bf8 a4 g \melismaEnd 
+a4 d4 d8 \melisma c bf a g4 \melismaEnd bf4 \melisma c d ef4. d8 c2. b8 a \melismaEnd b1
 }
 
 scMusicFourName = "bassus"
@@ -120,25 +120,25 @@ scMusicFourClef = \clef "bass"
 scMusicFourClefTransposed = \clef "bass"
 
 scMusicFour =   \relative c {  
-r\breve r r r 
+r1 r r r 
 r r r r 
-r d g,1 d'1 ~ d2 d ef ef d1 r2 d2 
-bf2 c d2. d4 d2 bf ef1 d1 g,2 g g'2 f bf,2. bf4 
-bf2 f'2 g c,2 d1 g,2 g'2 f2. d4 e2 fs2 g1 r1
-r1 r2 g,2 g'2. g4 g2 g f2. g4 a1 d,1 r1
-r\breve r1 r2 d2 g1 f2 d e f g \melisma f4 e d2. f4 ef2 \melismaEnd e2
-d1 r1 r2 c2 g'1 f2 d e f g2 \melisma f4 e d2. c4 
-bf2 a4 g a2 \melismaEnd a2 g2 g'2 f d c\breve d1. d2 
-g,1 r1 d'1. d2 d1 g,1 d'2. \melisma e4 fs2 g2 ~ g4 fs4 fs2 g1 \melismaEnd 
-d2 d1 d2 g2. g4 c,1 g'1.  g2 f2 \melisma bf, f'1 \melismaEnd
-bf,1 r1 r\breve r1 d1 ~ d1 bf ef d 
-\time 3/1 g,\breve r1
-r\breve. r r 
-r1 r1 g1 d'\breve d1 c\breve c1 g1 d'\breve g,\breve g1 
-c1 a\breve g g1 d'\breve d1 c\breve c1 ef d\breve
-\time 4/2 
-g,2 g'2 f4 \melisma e d c bf a g f g1 \melismaEnd c\breve
-d\breve g,2 g'2 g4 \melisma f ef d c2 b \melismaEnd c1 ~ c1 g1 ~ g\breve 
+r d g,2 d'2 ~ d4 d ef ef d2 r4 d4 
+bf4 c d4. d8 d4 bf ef2 d2 g,4 g g'4 f bf,4. bf8 
+bf4 f'4 g c,4 d2 g,4 g'4 f4. d8 e4 fs4 g2 r2
+r2 r4 g,4 g'4. g8 g4 g f4. g8 a2 d,2 r2
+r1 r2 r4 d4 g2 f4 d e f g \melisma f8 e d4. f8 ef4 \melismaEnd e4
+d2 r2 r4 c4 g'2 f4 d e f g4 \melisma f8 e d4. c8 
+bf4 a8 g a4 \melismaEnd a4 g4 g'4 f d c1 d2. d4 
+g,2 r2 d'2. d4 d2 g,2 d'4. \melisma e8 fs4 g4 ~ g8 fs8 fs4 g2 \melismaEnd 
+d4 d2 d4 g4. g8 c,2 g'2.  g4 f4 \melisma bf, f'2 \melismaEnd
+bf,2 r2 r1 r2 d2 ~ d2 bf ef d 
+\time 3/2 g,1 r2
+r1. r r 
+r2 r2 g2 d'1 d2 c1 c2 g2 d'1 g,1 g2 
+c2 a1 g g2 d'1 d2 c1 c2 ef d1
+\time 4/4 
+g,4 g'4 f8 \melisma e d c bf a g f g2 \melismaEnd c1
+d1 g,4 g'4 g8 \melisma f ef d c4 b \melismaEnd c2 ~ c2 g2 ~ g1 
 }
 
 
